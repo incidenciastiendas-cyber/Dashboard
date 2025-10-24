@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "incidenciastiendas",
+  "private_key_id": "85921ca7a49ba4f45dcabe76d8c42892d5d87d90",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDXgnz2hzKeLBoY\nY0ybQvdVNac4zTkfT1AHnTA4P3VaTUyNCAVKvv+Ua4ZdIRS+5k/GDGsvSoXz6vZ+\nBnodaIPbQKlrq5pAfp+8Z1UF58kGYzmntJ+jCOYTS1ThapLLUQB0xLRvbnLCUIZT\nGK0Kl4zE1hgP+93AO73Cl2G4Z2LkyC7m5BhVaOGc8Qark4nn4vYd4iGFg1uLmQ/b\n72NtyyC1WuwkoOUpuvQ1Tp9Fi6qceWJKok+OXi8u9uhvkwFdeRVWe2vVivutQNFp\nX8fg9JGmPYXXcAz2AiYSVPQ7zycYSWBqhOjK79fuJdfdpIKgz47zUMwkfs/0J7QO\nWUBciA8lAgMBAAECggEAQE6rw1Ssgg5e6xAWd+4Pp9mOwKBcfz9Hfj4leWNWPU/7\nm8nc6mT8FunO+lM4wY4wF8T05vOx7Qsb6pc8MTJSxkYRSBO4v64JNEsRT+XOUp2h\nQq3fROMO5IsCFRGcJBdTr4RS4z1t+RXWP02JtTNrygCoxXw+u3IYOcy6WDBhjiqx\nmr30Dszs9u7ee0Z9J7AE2/6K5pkQbz0xvVSZAMe8c/A6dlfTW5uxGEPjlKE3d8Jw\nEQTUUvDkSYQW1F17ohnFAg+UUmUIXwCf3dW29szCsDLjiT0c2tlU+TFWYWNep4by\n+Z1Yef0Ku2GEuGMUF7V8PSpDrjiw6NliotD++k/NsQKBgQD2vvfVjV+vgRosqBqI\nrb9lUHXh7DDBXK6g2XJcnfy5yav2j0U7lVhXNXJ2Dn6JyRJb5/+j0R8odLKZrkTD\nja6WeRzMqMP2tcNwqW2WcDbxTAEwbWdzmfl3nww0v+vIXFnCKdSPiO76vzngy/mT\nu9f4uWMKiAdwKs35vwp90iqGfwKBgQDfl54m3MIyAYDNNYS6dPqcbT2pCr18mDIA\nErCthAcy+znl104GopZ+yXFKkClnFVqrcFe4/W04Ve951+wP18i6FsBMhWjIfNgI\nOZ2eCIsGV4tnh6mIqAkaSK7ppwMMfLaq3Vpk/ug+hQCYNzbW4DvePghYaJ9j9JJk\nA4tEdfXAWwKBgD/OJCJJ24tztAQGOE5Nt6eIReN1AyqNP+8CK8t9YyPb3ab1Z26/\n8MckYAPdPaV9pEy10mpXIlqAyspowQlccuAgU20s2vfKCs7wURFM1ThSciBGujCv\niU4Ah9SAKIV4NBG8ZWX0f+/BUUMrG8+zDGcZ8V2AzYOY3giN+TWOCkcbAoGAAkPu\n/kXOUeNiArJAHgOBZoRU05mgQdro5sdJsvhbelDBTWrZB4guLiqsUy0SvlChEouY\n1+75ZFC6lGlzotV02y3P1PalESLyrWKoDinX/sB0USA2v4O0U+fYndVrWn0I/MIx\nYESU5c1DLEei7ppnAOFwBDVLKCAaO5ktmAv56XECgYEA4Y1mE937zKdhKDDPz0zi\nDX0eNgh7uksQosw6esMtfnbnj1tbHGUAt4ynKszhIfmJ/V4j91Nry9OuvF0/qlSO\nIHg4SUijm6Lrcfe8YRfSA6ses+LdDBYZy0OZRZt/JdanhgsWc0UtzEYGpkS++HqD\nRn1Z42fPiJ08/nRz3bLCs2E=\n-----END PRIVATE KEY-----\n",
+  "client_email": "rodrigo@incidenciastiendas.iam.gserviceaccount.com",
+  "client_id": "106448944265776589482",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/rodrigo%40incidenciastiendas.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

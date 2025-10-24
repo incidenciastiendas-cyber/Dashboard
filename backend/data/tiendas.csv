@@ -1,0 +1,95 @@
+Tienda,Nombre,Provincia,Direccion,Formato,Distrito,Distrital
+1002,Rio IV,Córdoba,VJ99+H4 Río Cuarto Córdoba,HCH,CENTRO,TBD
+1003,San Luis,San Luis,PM3W+GM San Luis,HCH,CUYO,Adrian Vinagre
+1004,San Fernando,GBA,GC83+6J Victoria Provincia de Buenos Aires,HCH,BS AS SUR / NORTE,Ariel Konaszcuk
+1005,Las Heras,Mendoza,44XV+63 Las Heras Mendoza,HCH,CUYO,Adrian Vinagre
+1006,San Juan,San Juan,FC5G+PQ San Juan,HCH,CUYO,Adrian Vinagre
+1007,La Rioja,La Rioja,H4CQ+W2 La Rioja,CH,CENTRO,TBD
+1008,Corrientes (Av. Maipú),Corrientes,G5HV+R3 Corrientes,HCH,NEA,Horacio Tupponi
+1010,Córdoba Sur,Córdoba,GRMP+6R Córdoba,PM,CENTRO,TBD
+1011,Salta,Salta,5HVH+VR Salta,CH,NOA,Luciano Budman
+1012,Santiago,Santiago del Estero,5QR2+68 Santiago del Estero,CH,NOA,Luciano Budman
+1013,Tigre,GBA,G8GP+9V El Talar Provincia de Buenos Aires,CH,BS AS SUR / NORTE,Ariel Konaszcuk
+1014,Lujan,Buenos Aires,FV3Q+2H Luján Provincia de Buenos Aires,HCH,BS AS OESTE/ NORTE,Ricardo Masilo
+1015,Maipú,Mendoza,26C2+HQ Maipú Mendoza,HCH,CUYO,Adrian Vinagre
+1016,Avellaneda 2 (Sarandí),GBA,8MC8+J4 Buenos Aires,CH,BS AS SUR / NORTE,Ariel Konaszcuk
+1017,La Tablada,GBA,7FX8+GJ La Tablada Provincia de Buenos Aires,CH,BS AS OESTE/ NORTE,Ricardo Masilo
+1018,Quilmes,GBA,7P84+FM Quilmes Provincia de Buenos Aires,CH,BS AS SUR / NORTE,Ariel Konaszcuk
+1020,Tucumán,Tucumán,5PWQ+3W San Miguel de Tucumán,HCH,NOA,Luciano Budman
+1021,Neuquén,Neuquén,2WX2+PW Neuquén,HCH,PATAGONIA,Rafael Ghirardi
+1022,Bariloche,Rio Negro,RMQJ+P7 San Carlos de Bariloche Río Negro,HCH,PATAGONIA,Rafael Ghirardi
+1023,La Pampa,La Pampa,9PWH+JF Santa Rosa La Pampa,HCH,SUR + LA PAMPA,Sebastian Martinelli
+1024,Formosa,Formosa,RQ3W+WQ Formosa,HCH,NEA,Horacio Tupponi
+1026,Catamarca,Catamarca,G6MW+83 San Fernando del Valle de Catamarca,HCH,CENTRO,TBD
+1027,Mataderos,CABA,8GQ8+98 Buenos Aires,SCH,BS AS SUR / NORTE,Ariel Konaszcuk
+1028,Alte Brown,GBA,5JM5+8W Burzaco,HCH,BS AS SUR / NORTE,Ariel Konaszcuk
+1029,Moreno,GBA,C763+PW Moreno,HCH,BS AS OESTE/ NORTE,Ricardo Masilo
+1030,José C Paz,GBA,F6CX+4V José C. Paz,SCH,BS AS OESTE/ NORTE,Ricardo Masilo
+1031,Jujuy,Jujuy,QPQ6+PJ San Salvador de Jujuy,HCH,NOA,Luciano Budman
+1032,Malvinas Arg,GBA,G72Q+JC Ingeniero Pablo Nogués,HCH,BS AS OESTE/ NORTE,Ricardo Masilo
+1033,Rio Salí,Tucumán,5R6J+X9 Banda del Río Salí,HCH,NOA,Luciano Budman
+1035,3 de Febrero,GBA,C9GQ+29 Pablo Podesta,HCH,BS AS OESTE/ NORTE,Ricardo Masilo
+1036,Moreno Shopping,GBA,86X4+8W Moreno,SCH,BS AS OESTE/ NORTE,Ricardo Masilo
+1037,San Martin,GBA,CFG9+9Q Buenos Aires,SCH,BS AS SUR / NORTE,Ariel Konaszcuk
+1038,Cipolletti,Rio Negro,3298+88 Cipolletti,HCH,PATAGONIA,Rafael Ghirardi
+1039,Paraná,Entre Rios,7G54+4G Paraná,HCH,CENTRO,TBD
+1042,Trelew,Chubut,QP25+4F Trelew,HCH,PATAGONIA,Rafael Ghirardi
+1043,Laferrere,GBA,7C5P+79 Gregorio de Laferrere,HCH,BS AS OESTE/ NORTE,Ricardo Masilo
+1044,Hurlingham (AV. Villegas),GBA,C87P+4J Hurlingham,HCH,BS AS OESTE/ NORTE,Ricardo Masilo
+1045,Hurlingham (AV. Vergara),GBA,99R7+PW Hurlingham,HCH,BS AS OESTE/ NORTE,Ricardo Masilo
+1046,Pergamino,Buenos Aires,4C4P+94 Pergamino,HCH,SUR + LA PAMPA,Sebastian Martinelli
+1050,Lanús,GBA,7MM2+P7 Monte Chingolo,CH,BS AS SUR / NORTE,Ariel Konaszcuk
+1051,Posadas,Misiones,J3MF+5C Posadas,CH,NEA,Horacio Tupponi
+1052,Oran,Salta,VM4F+4P San Ramon de la Nueva Oran,CH,NOA,Luciano Budman
+1053,Viedma,Rio Negro,52G8+3F Viedma,HCH,SUR + LA PAMPA,Sebastian Martinelli
+1054,Olavarría,Buenos Aires,4M9W+Q9 Olavarría,HCH,SUR + LA PAMPA,Sebastian Martinelli
+1055,Villa Mercedes,San Luis,8G9X+R7 Villa Mercedes,HCH,CUYO,Adrian Vinagre
+1056,Villa Nueva,Córdoba,HQG4+PJ Villa María,HCH,CENTRO,TBD
+1057,Comodoro Rivadavia,Chubut,4F8G+J4 Comodoro Rivadavia,HCH,PATAGONIA,Rafael Ghirardi
+1058,Resistencia (Chaco),Chaco,HX3H+9F Resistencia,HCH,NEA,Horacio Tupponi
+1059,Gonzalez Catán,GBA,69PJ+Q8 González Catán,CH,BS AS OESTE/ NORTE,Ricardo Masilo
+1060,Fuerza Aérea (Cba),Córdoba,HQ94+5G Córdoba,PM,CENTRO,TBD
+1061,Junín,Buenos Aires,C22F+PV Junín,HCH,SUR + LA PAMPA,Sebastian Martinelli
+1067,San Martín (Mza),Mendoza,WGC8+4P San Martín,HCH,CUYO,Adrian Vinagre
+1068,Palmares (Godoy Cruz),Mendoza,24XR+6J Godoy Cruz,HCH,CUYO,Adrian Vinagre
+1074,Goya (Corrientes),Corrientes,RPWG+3X Goya,HCH,NEA,Horacio Tupponi
+1075,Salta Fuerza Aérea,Salta,7HFW+HM Salta,HCH,NOA,Luciano Budman
+1076,Lomas de Zamora,GBA,6JVC+2X Temperley,CH,BS AS SUR / NORTE,Ariel Konaszcuk
+1077,La Pampa (Gral Pico),La Pampa,86Q8+3R Gral. Pico,HCH,SUR + LA PAMPA,Sebastian Martinelli
+1078,Salta Tartagal,Salta,F6P4+JX Tartagal,HCH,NOA,Luciano Budman
+1080,Santiago del Estero Sur,Santiago del Estero,5P5Q+56 Santiago del Estero,HCH,NOA,Luciano Budman
+1081,Rawson San Juan,San Juan,CFF4+WJ San Juan,HCH,CUYO,Adrian Vinagre
+1082,Tucumán (Av. Jujuy),Tucumán,4QMH+GM San Miguel de Tucumán,HCH,NOA,Luciano Budman
+1084,San Vicente,GBA,XHGG+HM San Vicente,SCH,BS AS SUR / NORTE,Ariel Konaszcuk
+1085,Corrientes (Av. Maipú),Corrientes,F5XP+RW Corrientes,HCH,NEA,Horacio Tupponi
+1086,Formosa II,Formosa,RRXQ+HG Formosa,HCH,NEA,Horacio Tupponi
+1087,Pilar,GBA,H427+GJ Pilar,SCH,BS AS OESTE/ NORTE,Ricardo Masilo
+1088,Tuc. Concepción,Tucumán,JCX6+W7 Concepción,HCH,NOA,Luciano Budman
+1092,San Juan Norte,San Juan,FFQ3+FM San Juan,HCH,CUYO,Adrian Vinagre
+1093,Comodoro Rivadavia Norte,Chubut,5GFM+8G Comodoro Rivadavia,HCH,PATAGONIA,Rafael Ghirardi
+1096,Caseros,GBA,9CVV+6V Caseros,CH,BS AS SUR / NORTE,Ariel Konaszcuk
+1097,Donato Alvarez (CDB),Córdoba,MPGJ+FG Córdoba,HCH,CENTRO,TBD
+1098,R.S. Peña,Chaco,6G5W+FW Sáenz Peña,HCH,NEA,Horacio Tupponi
+1099,Posadas II,Misiones,H3F9+W2 Posadas,HCH,NEA,Horacio Tupponi
+1100,Santa Rosa (La Pampa) II,La Pampa,9M7P+X3 Santa Rosa,HCH,SUR + LA PAMPA,Sebastian Martinelli
+1106,Tuc. Ejército Del Norte,Tucumán,6Q4G+85 San Miguel de Tucumán,HCH,NOA,Luciano Budman
+1108,Puerto Madryn,Chubut,6X88+2C Puerto Madryn,HCH,PATAGONIA,Rafael Ghirardi
+1110,Claypole,GBA,5MR4+7C Don Orione,CH,BS AS SUR / NORTE,Ariel Konaszcuk
+1111,San Pedro de Jujuy,Jujuy,Q4FQ+WV San Pedro de Jujuy,HCH,NOA,Luciano Budman
+1114,Clorinda,Formosa,P77G+2C Clorinda,HCH,NEA,Horacio Tupponi
+1115,General Roca,Rio Negro,XC66+VC Gral. Roca,HCH,PATAGONIA,Rafael Ghirardi
+1116,Moron,GBA,896F+9G Morón,CH,BS AS OESTE/ NORTE,Ricardo Masilo
+1119,Moreno Derqui,GBA,F672+HM Cuartel V,CH,BS AS OESTE/ NORTE,Ricardo Masilo
+2997,Grafa,CABA,CFGV+7G Buenos Aires,HCH,BS AS SUR / NORTE,Ariel Konaszcuk
+2998,San Justo,GBA,8C7V+HJ San Justo,HCH,BS AS OESTE/ NORTE,Ricardo Masilo
+2999,Avellaneda,GBA,8JGJ+6Q Avellaneda,HCH,BS AS SUR / NORTE,Ariel Konaszcuk
+3601,La Plata,Buenos Aires,4X5X+7P Gonnet,HCH,BS AS SUR / NORTE,Ariel Konaszcuk
+3602,Bahía Blanca,Buenos Aires,8Q79+V7 Bahía Blanca,HCH,SUR + LA PAMPA,Sebastian Martinelli
+3603,Santa Fe,Santa Fe,985V+6C Santa Fe de la Vera Cruz,HCH,CENTRO,TBD
+3604,Paraná,Entre Rios,7FH2+RV Paraná,HCH,CENTRO,TBD
+3605,Córdoba Oeste,Córdoba,JP3R+X7 Córdoba,HCH,CENTRO,TBD
+3606,Córdoba Este,Córdoba,JR5R+CM Córdoba,HCH,CENTRO,TBD
+3608,Neuquén,Neuquén,2XQ5+QJ Neuquén,SCH,PATAGONIA,Rafael Ghirardi
+3613,Mendoza (Guaymallén),Mendoza,35MF+MM Mendoza,SCH,CUYO,Adrian Vinagre
+4001,Campana,Buenos Aires,Urquiza 50 Campana,SCH,BS AS OESTE/ NORTE,Ricardo Masilo
+999,Prueba,Buenos Aires,,Prueba Formato,Prueba Distrito,Klobouk

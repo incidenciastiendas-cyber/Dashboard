@@ -1,0 +1,52 @@
+Departamento_ID,Departamento_DESC,Coordinacion,Area
+92,92 - Almacen seco,Almacén,Food
+95,95 - Bebidas sin alcohol y snacks,Bebidas,Food
+1,1 - Galletitas y Golosinas,Almacén,Food
+96,96 - Bebidas con alcohol,Bebidas,Food
+97,97 - Envasados,Frescos,Food
+91,91 - Congelados,Frescos,Food
+8,8 - Mascotas,Consumibles,Non Food
+2,2 - Perfumeria,Consumibles,Non Food
+4,4 - Papeles,Consumibles,Non Food
+82,82 - Checkout,Almacén,Food
+90,90 - Lacteos,Frescos,Food
+84,84 - Prod. Secos y especias,Costos,Food
+26,26 - Bebes,Consumibles,Non Food
+46,46 - Cosmeticos,Consumibles,Non Food
+69,69 - Fiambreria,Frescos,Food
+40,40 - Farmacia Venta Libre,Negocios especiales,Non Food
+16,16 - Jardineria,Temporadas,Non Food
+13,13 - Quimicos,Consumibles,Non Food
+86,86 - Panaderia retail,Costos,Food
+17,17 - Muebles,Temporadas,Non Food
+43,43 - Carne Vacuno,Costos,Food
+93,93 - Pollo - Cerdo - Granja,Costos,Food
+9,9 - Deportes,Temporadas,Non Food
+81,81 - Rotiseria y Deli,Frescos,Food
+12,12 - Pintureria,Temporadas,Non Food
+94,94 - Frutas y Verduras,Costos,Food
+10,10 - Automotor,Negocios especiales,Non Food
+34,34 - Damas,Homelines,Non Food
+38,38 - Farmacia recetados,Negocios especiales,Non Food
+3,3 - Libreria,Temporadas,Non Food
+5,5 - Electronicos,Hardlines,Non Food
+7,7 - Jugueteria,Temporadas,Non Food
+11,11 - Ferreteria,Hardlines,Non Food
+14,14 - Bazar,Homelines,Non Food
+15,15 - Pequeño electro,Hardlines,Non Food
+18,18 - Navidad,Homelines,Non Food
+19,19 - Decoracion,Homelines,Non Food
+20,20 - Cocina y Bano,Homelines,Non Food
+21,21 - Aves,Costos,Food
+22,22 - Blancos,Homelines,Non Food
+23,23 - Caballeros,Softlines,Non Food
+24,24 - Ninos,Homelines,Non Food
+25,25 - Calzados,Homelines,Non Food
+27,27 - Medias y Soquetes,Homelines,Non Food
+28,28 - Bebes - Ropa,Homelines,Non Food
+29,29 - Bebes - Puericultura,Temporadas,Non Food
+30,30 - Ropa interior,Softlines,Non Food
+31,31 - Equipajes - Accesorios,Temporadas,Non Food
+33,33 - Ninas,Homelines,Non Food
+35,35 - Climatización,Hardlines,Non Food
+36,36 - Linea Blanca,Hardlines,Non Food
