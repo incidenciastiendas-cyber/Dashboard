@@ -2,33 +2,162 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dashboard de Incidencias Tiendas</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dashboard de Incidencias</title>
+
+  <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="css/styles.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <style>
+    body { background-color: #f8f9fa; font-family: 'Poppins', sans-serif; }
+    footer { background: #212529; color: #fff; padding: 10px 0; text-align: center; }
+    .card-metric { border: none; border-radius: 12px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
+    .logo { height: 28px; margin-right: 10px; }
+  </style>
 </head>
 <body>
 
-  <nav class="navbar navbar-dark bg-dark mb-4">
+  <!-- Navbar -->
+  <nav class="navbar navbar-dark bg-dark">
     <div class="container-fluid">
-      <span class="navbar-brand mb-0 h1">📊 Dashboard de Incidencias</span>
+      <span class="navbar-brand mb-0 h1 d-flex align-items-center">
+        <img src="assets/logo.jpg" class="logo" alt="logo"> Dashboard de Incidencias
+      </span>
     </div>
   </nav>
 
-  <div class="container">
-    <div id="resumen" class="row g-3 mb-4"></div>
+  <div class="container py-4">
+    <!-- Cards -->
+    <div id="cards" class="row text-center g-3 mb-4"></div>
 
-    <div class="table-responsive">
-      <table id="tabla" class="table table-striped table-hover align-middle">
-        <thead class="table-dark">
-          <tr id="thead"></tr>
-        </thead>
-        <tbody id="tbody"></tbody>
-      </table>
+    <!-- Filtros -->
+    <div class="card shadow-sm p-3 mb-4">
+      <div class="row g-3 align-items-end">
+        <div class="col-md-3">
+          <label class="form-label">Departamento</label>
+          <select id="departamento" multiple class="form-select"></select>
+        </div>
+        <div class="col-md-3">
+          <label class="form-label">Distrito</label>
+          <select id="distrito" multiple class="form-select"></select>
+        </div>
+        <div class="col-md-2">
+          <label class="form-label">Provincia</label>
+          <select id="provincia" multiple class="form-select"></select>
+        </div>
+        <div class="col-md-4">
+          <label class="form-label">Tienda (ID - Nombre)</label>
+          <select id="tienda" multiple class="form-select"></select>
+        </div>
+      </div>
+
+      <div class="row g-3 align-items-center mt-3">
+        <div class="col-md-3">
+          <label class="form-label">Periodo</label>
+          <select id="periodo" class="form-select">
+            <option value="semana_actual">Semana actual</option>
+            <option value="mes_actual">Mes actual</option>
+            <option value="ultima_semana">Última semana</option>
+            <option value="ultimo_mes">Último mes</option>
+          </select>
+        </div>
+        <div class="col-md-3">
+          <label class="form-label">Agrupar por</label>
+          <select id="tipo" class="form-select">
+            <option value="fecha">Por Fecha</option>
+            <option value="semana">Por Semana ISO</option>
+            <option value="mes">Por Mes</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <!-- Gráfico -->
+    <div class="card p-4 shadow-sm">
+      <h5 class="mb-3">Histograma de Incidencias</h5>
+      <canvas id="chart"></canvas>
     </div>
   </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="js/main.js"></script>
+  <footer>
+    <p>© 2025 GDN Argentina · Incidencias Tiendas</p>
+  </footer>
+
+  <script>
+    let chart = null;
+
+    async function cargarDatos() {
+      const res = await fetch("http://127.0.0.1:5000/incidencias/resumen");
+      const data = await res.json();
+
+      // Cards
+      const colores = {
+        "Pendiente": "bg-danger bg-opacity-10 text-danger",
+        "En Proceso": "bg-warning bg-opacity-10 text-warning",
+        "Finalizado": "bg-success bg-opacity-10 text-success"
+      };
+
+      const cards = document.getElementById("cards");
+      cards.innerHTML = Object.entries(data.por_estado)
+        .map(([estado, valor]) => `
+          <div class="col-md-4">
+            <div class="card card-metric ${colores[estado] || 'bg-light'} p-3">
+              <h5>${estado}</h5>
+              <h2>${valor}</h2>
+            </div>
+          </div>`
+        ).join("");
+
+      // Cargar filtros (mock: si tu endpoint devuelve info, reemplazamos)
+      cargarOpciones("departamento", ["Almacén", "Frescos", "Consumibles", "Costos"]);
+      cargarOpciones("distrito", ["CENTRO", "CUYO", "SUR + LA PAMPA", "NEA", "NOA", "PATAGONIA"]);
+      cargarOpciones("provincia", ["Buenos Aires", "Córdoba", "Mendoza", "San Juan", "Santa Fe"]);
+      cargarOpciones("tienda", ["1002 - Río IV", "1003 - San Luis", "1004 - San Fernando"]);
+
+      renderChart("fecha", data.por_fecha);
+      document.getElementById("tipo").addEventListener("change", e => {
+        renderChart(e.target.value, data[`por_${e.target.value}`]);
+      });
+    }
+
+    function cargarOpciones(id, lista) {
+      const sel = document.getElementById(id);
+      sel.innerHTML = lista.map(v => `<option>${v}</option>`).join("");
+    }
+
+    function renderChart(tipo, datos) {
+      const ctx = document.getElementById("chart").getContext("2d");
+      const etiquetas = datos.map(r => Object.values(r)[0]);
+      const valores = datos.map(r => r.Cantidad);
+      if (chart) chart.destroy();
+      chart = new Chart(ctx, {
+        type: "bar",
+        data: {
+          labels: etiquetas,
+          datasets: [{
+            label: "Cantidad de incidencias",
+            data: valores,
+            backgroundColor: "rgba(54, 162, 235, 0.6)"
+          }]
+        },
+        options: {
+          responsive: true,
+          scales: {
+            x: { ticks: { autoSkip: true, maxTicksLimit: 10 } },
+            y: { beginAtZero: true }
+          }
+        }
+      });
+    }
+
+    cargarDatos().catch(err => {
+      console.error(err);
+      document.body.innerHTML += `<p class='text-center text-danger mt-5'>Error al cargar datos</p>`;
+    });
+  </script>
 </body>
 </html>

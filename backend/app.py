@@ -127,6 +127,30 @@ def incidencias():
         "muestra": muestra
     })
 
+@app.route("/incidencias/resumen")
+def incidencias_resumen():
+    ruta_local = "data/snapshot_actual.json.gz"
+    df = obtener_ultimo_snapshot(ruta_local)
+
+    # Asegurar columnas
+    df["Marca temporal"] = pd.to_datetime(df["Marca temporal"], errors="coerce", dayfirst=True)
+    df["Recuento"] = 1
+
+    # Agrupaciones
+    resumen_fecha = df.groupby(df["Marca temporal"].dt.date)["Recuento"].sum().reset_index(name="Cantidad")
+    resumen_semana = df.groupby(df["Marca temporal"].dt.isocalendar().week)["Recuento"].sum().reset_index(name="Cantidad")
+    resumen_mes = df.groupby(df["Marca temporal"].dt.to_period("M").astype(str))["Recuento"].sum().reset_index(name="Cantidad")
+
+    # Totales por estado
+    por_estado = df["Estado"].value_counts().to_dict()
+
+    return jsonify({
+        "por_estado": por_estado,
+        "por_fecha": resumen_fecha.to_dict(orient="records"),
+        "por_semana": resumen_semana.to_dict(orient="records"),
+        "por_mes": resumen_mes.to_dict(orient="records")
+    })
+
 
 if __name__ == "__main__":
     os.makedirs("data", exist_ok=True)
